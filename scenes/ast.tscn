@@ -7,7 +7,7 @@ resource_name = "run"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimationPlayer/torso/left_foot:position")
 tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/loop_wrap = false
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
@@ -19,19 +19,19 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/path = NodePath("AnimationPlayer/torso/left_foot:rotation_degrees")
 tracks/1/interp = 1
-tracks/1/loop_wrap = true
+tracks/1/loop_wrap = false
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -16.9594, 8.61648 ]
+"values": [ 0.0, -16.9594, 0.0 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("AnimationPlayer/torso/right_foot:position")
 tracks/2/interp = 1
-tracks/2/loop_wrap = true
+tracks/2/loop_wrap = false
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
@@ -43,19 +43,19 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/path = NodePath("AnimationPlayer/torso/right_foot:rotation_degrees")
 tracks/3/interp = 1
-tracks/3/loop_wrap = true
+tracks/3/loop_wrap = false
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -16.9594, 8.61648 ]
+"values": [ 0.0, -16.9594, 0.0 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("AnimationPlayer/torso/head:position")
 tracks/4/interp = 1
-tracks/4/loop_wrap = true
+tracks/4/loop_wrap = false
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
@@ -67,14 +67,14 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/path = NodePath("AnimationPlayer/torso/head:rotation_degrees")
 tracks/5/interp = 1
-tracks/5/loop_wrap = true
+tracks/5/loop_wrap = false
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -16.9594, 8.61648 ]
+"values": [ 0.0, -16.9594, 0.0 ]
 }
 
 [sub_resource type="AtlasTexture" id=2]
@@ -110,7 +110,7 @@ texture = SubResource( 2 )
 
 [node name="head" type="Sprite" parent="AnimationPlayer/torso"]
 position = Vector2( 0.380127, -268.95 )
-rotation = -0.133972
+rotation = -0.042956
 texture = SubResource( 3 )
 offset = Vector2( 0, -203.05 )
 __meta__ = {
@@ -119,7 +119,7 @@ __meta__ = {
 
 [node name="left_foot" type="Sprite" parent="AnimationPlayer/torso"]
 position = Vector2( -25, 272 )
-rotation = -0.133972
+rotation = -0.042956
 z_index = -1
 texture = SubResource( 4 )
 offset = Vector2( 66.5517, 39.5482 )
@@ -129,7 +129,7 @@ __meta__ = {
 
 [node name="right_foot" type="Sprite" parent="AnimationPlayer/torso"]
 position = Vector2( 49.428, 274.305 )
-rotation = -0.133972
+rotation = -0.042956
 z_index = -1
 texture = SubResource( 5 )
 offset = Vector2( 70, 1 )
