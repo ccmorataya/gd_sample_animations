@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3.78638, 513.026 )
+
+[sub_resource type="SegmentShape2D" id=2]
+
+[node name="sb2d_horizontal" type="StaticBody2D"]
+
+[node name="cs2d_top" type="CollisionShape2D" parent="."]
+position = Vector2( 512.722, -3.80748 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="cs2d_bottom" type="CollisionShape2D" parent="."]
+position = Vector2( 511.935, 603.591 )
+rotation = 1.5708
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 1, 60 )
+shape = SubResource( 2 )
